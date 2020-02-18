@@ -1,19 +1,19 @@
 {
   "home": {
-    "title": "Welcome, Java Hipster!",
-    "subtitle": "This is your homepage",
+    "title": "Hey, thank you for visiting my Website!",
+    "subtitle": "This is my website. Here you can buy graphicdesigns that I made espacially for you. For example: logos, banners for youtube and more!",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
     },
-    "question": "If you have any question on JHipster:",
+    "question": "If you want a special design, or you have a question. Contact me:",
     "link": {
-      "homepage": "JHipster homepage",
-      "stackoverflow": "JHipster on Stack Overflow",
-      "bugtracker": "JHipster bug tracker",
-      "chat": "JHipster public chat room",
-      "follow": "follow @jhipster on Twitter"
+      "homepage": "Contact",
+      "stackoverflow": "Twitter",
+      "bugtracker": "Instagram",
+      "chat": "E-Mail",
+      "follow": "follow my Youtube"
     },
-    "like": "If you like JHipster, don't forget to give us a star on",
+    "like": "If you like my website, and want support me, follow my",
     "github": "GitHub"
   }
 }
