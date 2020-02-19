@@ -12,3 +12,7 @@ buildNumber.properties
 node/
 node_modules/
 package-lock.json
+.classpath
+.factorypath
+.project
+.settings/

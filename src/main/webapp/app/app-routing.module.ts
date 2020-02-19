@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { errorRoute } from './layouts/error/error.route';
 import { navbarRoute } from './layouts/navbar/navbar.route';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
+import { ProductsComponent } from 'app/products/products.component';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
 
@@ -19,6 +20,10 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
           },
           canActivate: [UserRouteAccessService],
           loadChildren: () => import('./admin/admin-routing.module').then(m => m.AdminRoutingModule)
+        },
+        {
+          path: 'jhi-products',
+          component: ProductsComponent
         },
         ...LAYOUT_ROUTES
       ],

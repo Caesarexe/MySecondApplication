@@ -14,6 +14,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { ErrorComponent } from './layouts/error/error.component';
     MyAppEntityModule,
     MyAppAppRoutingModule
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, ProductsComponent],
   bootstrap: [MainComponent]
 })
 export class MyAppAppModule {}
