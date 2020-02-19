@@ -17,10 +17,18 @@
                 </a>
             </li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                <a class="nav-link" routerLink="jhi-products" (click)="collapseNavbar()">
+                <a class="nav-link" routerLink="products" (click)="collapseNavbar()">
                     <span>
                         <fa-icon icon="th-list"></fa-icon>
                         <span jhiTranslate="global.menu.products">Products</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="contact" (click)="collapseNavbar()">
+                    <span>
+                        <fa-icon icon="th-list"></fa-icon>
+                        <span jhiTranslate="global.menu.contact">Contact</span>
                     </span>
                 </a>
             </li>
