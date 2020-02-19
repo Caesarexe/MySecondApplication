@@ -1,0 +1,23 @@
+---
+applications:
+# -----------------------------------------------------------------------------------
+# Java Backend Service
+# -----------------------------------------------------------------------------------
+- name: ((service-name))
+  memory: 1024M
+  disk_quota: 512M
+  instances: 1
+  buildpacks:
+    - java_buildpack
+  path: ((service-binary-path))
+  
+  routes: 
+  - route: ((service-route-host)).((cf-domain))                                             # tenant-unspecific route (for use inside PaaS account), e.g. myservice.internal.cfapps.sap.hana.ondemand.com
+  
+  # services:
+  # - ((saas-registry-instance-name)) # SaaS Registry service instance binding. Requires an instance of 'saas-registry' instantiated with plan 'application' and saas-registry-config.json. See services-manifest.yml.
+  # - ((xsuaa-instance-name))         # XSUAA service instance binding. Requires an instance of 'xsuaa' instantiated with plan 'broker' and xsuaa-config.json of this project. See services-manifest.yml.
+  # - ((hana-instance-name))          # HANA service instance binding. Requires an instance of 'managed-hana' service with plan 'hdi-shared'. See services-manifest.yml.
+  
+  env:
+    # spring.profiles.active: <any profile you like>                                        # activate a spring profile you might have defined in your application.yml. In CF, 'cloud' profile is active by default.

@@ -1,0 +1,18 @@
+---
+application-title:                "A template multi-tenancy application"                        # the title of this application. Used e.g. as a display name in the Cloud Cockpit subscription tile.
+application-identifier:           template-service                                              # unique applicatin identifier. Will be used as xsappname, and where useful for other unique, app-specific IDs.
+application-description:          "A service to maintain a catalog of books"                    # A human-readable description of this application / service. Will be used as 'description' in XSUAA configuration.
+service-binary-path:               ./target/my-app-0.0.1-SNAPSHOT.jar                           # the path to the service's Java binary. Used in manifest.yml's 'path' variable of Java backend service part.
+service-name:                      caesar-hipster                          # the name of the Java service in CF. Should be unique within CF space (e.g. prefixed with your D/I/C-user).
+service-route-host:                caesar-hipster                              # the name to use as host part of the service's route. The route is concatenated in manifest.yml as https://((service-route-host)).((cfdomain)), e.g. https://myService.internal.cfapps.sap.hana.ondemand.com
+cf-domain:                         cfapps.eu10.hana.ondemand.com                        # the landscape-specific domain to use as part of the service route (e.g. for CANARY, use: internal.cfapps.sap.hana.ondemand.com, for PROD on AWS, use: cfapps.eu10.hana.ondemand.com, etc.)
+tenant-separator:                  "-"                                                          # the landscape-specific tenant separator (in CANARY: -, in PROD: .)
+xsuaa-instance-name:               <.your-D/I/C-User>-webshop-solution-xsuaa                    # the name of the XSUAA service instance to create and bind to the Java service. See manifest.yml and services-manifest.yml.
+saas-registry-instance-name:       <.your-D/I/C-User>-webshop-solution-saas-registry            # the name of the SaaS registry instance to create. See services-manifest.yml.
+hana-instance-name:                <.your-D/I/C-User>-template-service-hana                     # the name of the HANA service instance to create and bind to the HDI deployer is bound to. See manifest.yml and services-manifest.yml.
+ui-repo-design-time-instance-name: <.your-D/I/C-User>-template-service-ui-repo-dt               # the name of the UI5 repository design time service instance. This is where your UI5 contents will be deployed and stored. It will be served by the runtime instance.
+ui-repo-runtime-instance-name:     <.your-D/I/C-User>-template-service-ui-repo-rt               # the name of the UI5 repository runtime service instance. This is where your UI5 contents will served from. Referenced also in approuter's xs-app.json!
+flp-repo-instance-name:            <.your-D/I/C-User>-template-service-flp-repo                 # the name of the FLP / portal runtime service instance. This is where you FLP content is uploaded to and served from.
+subaccount-subdomain:              d056076-sub1                              # the sub-domain of the CF account the service is deployed to. This is used to declare tenant-specific routes. You can find this in the Cloud Foundry cockpit, when you inspect your subaccount.
+hdi-deployer-username:             hdi-dynamic-deployment-user                                  # the username used when calling the dynamic HDI content deployment APIs of the HDI deployer app
+hdi-deployer-password:             hdi-dynamic-deployment-password                              # the password used when calling the dynamic HDI content deployment APIs of the HDI deployer app
