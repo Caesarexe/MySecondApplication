@@ -16,6 +16,7 @@ import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,7 @@ import { ContactComponent } from './contact/contact.component';
     MyAppEntityModule,
     MyAppAppRoutingModule
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, ProductsComponent, ContactComponent],
+  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, ProductsComponent, ContactComponent, AboutComponent],
   bootstrap: [MainComponent]
 })
 export class MyAppAppModule {}
