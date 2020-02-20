@@ -1,0 +1,9 @@
+{
+  "contact": {
+    "title": "Send me a message",
+    "firstname": "First name:",
+    "lastname": "Last name:",
+    "messageFieldCaption": "Message:",
+    "submitMessageButtonText": "Send"
+  }
+}
