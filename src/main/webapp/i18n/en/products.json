@@ -1,5 +1,6 @@
 {
   "products": {
-   "title": "Products to buy:"
+   "title": "Products to buy:",
+    "order": "Order"
   }
 }

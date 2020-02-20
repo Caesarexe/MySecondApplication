@@ -1,0 +1,21 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 5px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.orderButton {
+background-image: linear-gradient(to right, #fbc2eb 20%, #a6c1ee 100%);
+border: none;
+color: black;
+padding: 7px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
