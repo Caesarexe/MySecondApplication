@@ -1,6 +1,7 @@
 {
   "home": {
-    "title": "Hey, thank you for visiting my Website!",
+    "title": "Caesar Design",
+    "welcomeMessage": "Hey, thank you for visiting my Website!",
     "subtitle": "This is my website. Here you can buy graphicdesigns that I made espacially for you. For example: logos, banners for youtube and more!",
     "logged": {
       "message": "You are logged in as user \"{{username}}\"."
