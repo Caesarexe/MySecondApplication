@@ -1,3 +1,34 @@
+# Software you need to run this Project
+
+1. Java SDK
+2. [Node.JS](https://nodejs.org/en/download/)
+3. NPM (included in Node.JS installer)
+4. [Git](https://git-scm.com/download/win)
+5. [Maven](https://maven.apache.org/download.cgi) | [How to install](https://howtodoinjava.com/maven/how-to-install-maven-on-windows/)
+
+# Cloning This Repository to Your Local Computer
+
+Create a folder on your hard disk, e.g. "GitProjects", then execute the following, one after the other:
+
+```shell
+cd Gitprojects
+git clone https://github.com/Caesarexe/MySecondApplication.git
+```
+
+# Most Important Commands for Running the Application
+
+```shell
+mvn                                        # builds the application & runs it locally
+mvn clean package                          # builds the application and creates the package my-app-0.0.1-SNAPSHOT.jar in folder target/
+java -jar target/my-app-0.0.1-SNAPSHOT.jar # run the Java application + Angular frontend (requires that mvn clean package was called before.)
+npm start                                  # starts only the Angular frontend, changes on hard disk are immediately visible in browser
+```
+
+# Most Important URLs
+
+`http://localhost:8080` - Address of Java application including Angular frontend (requires that `java -jar target/my-app-0.0.1-SNAPSHOT.jar` was called before).
+`http://localhost:9000` - Address of Angular frontend only (reuqires that `npm start` was executed before).
+
 # myApp
 
 This application was generated using JHipster 6.7.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.7.1](https://www.jhipster.tech/documentation-archive/v6.7.1).
