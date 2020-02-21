@@ -1,8 +1,8 @@
 {
   "contact": {
     "title": "Schicke mir eine Nachricht",
-    "firstname": "Vorname:",
-    "lastname": "Nachname:",
+    "name": "Name:",
+    "email": "E-Mail:",
     "messageFieldCaption": "Nachricht:",
     "submitMessageButtonText": "Abschicken"
   }
