@@ -17,6 +17,7 @@ import { ErrorComponent } from './layouts/error/error.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { FormsModule } from "@angular/forms"; 
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { AboutComponent } from './about/about.component';
     MyAppHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     MyAppEntityModule,
-    MyAppAppRoutingModule
+    MyAppAppRoutingModule,
+    FormsModule
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, ProductsComponent, ContactComponent, AboutComponent],
   bootstrap: [MainComponent]

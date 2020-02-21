@@ -3,12 +3,10 @@
 </h2>
 <form>
     <label for="name" jhiTranslate="contact.name">Name:</label><br>
-    <input type="text" id="name" name="name"><br>
+    <input type="text" id="name" name="name" [(ngModel)]="name"></input><br>
     <label for="email" jhiTranslate="contact.email">E-Mail:</label><br>
-    <input type="text" id="email" name="email">
-</form>
-<form>
+    <input type="text" id="email" name="email" [(ngModel)]="email"></input>
     <label for="message" jhiTranslate="contact.messageFieldCaption">Message:</label><br>
-    <textarea id="message" rows="10" cols="100"></textarea><br>
-    <button class="submitMessageButton" jhiTranslate="contact.submitMessageButtonText">Send</button>
+    <textarea [(ngModel)]="msg" id="message" rows="10" cols="100"></textarea><br>
+    <button class="submitMessageButton" jhiTranslate="contact.submitMessageButtonText" (click)="send()">Send</button>
 </form>
