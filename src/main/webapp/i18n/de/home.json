@@ -1,6 +1,7 @@
 {
   "home": {
-    "title": "Hey, danke dass du meine Webseite besuchst!",
+    "title": "Caesar Design",
+    "welcomeMessage": "Hey, danke dass du meine Webseite besuchst!",
     "subtitle": "Das ist meine Webseite. Hier kannst du Grafiken kaufen die ich speziell für dich machen werde. Als Beispiel Logos, Banner für Youtube und noch viel mehr!",
     "logged": {
       "message": "Sie sind als Benutzer \"{{username}}\" angemeldet."
