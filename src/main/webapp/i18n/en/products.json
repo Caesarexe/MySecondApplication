@@ -1,6 +1,9 @@
 {
   "products": {
    "title": "Products to buy:",
-    "order": "Order"
+    "order": "Order",
+    "type": "Design type",
+    "price": "Price",
+    "orderit": "Order it!"
   }
 }

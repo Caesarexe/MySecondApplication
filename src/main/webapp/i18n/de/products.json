@@ -1,6 +1,9 @@
 {
   "products": {
    "title": "Produkte die zum Verkauf stehen:",
-    "order": "Bestellen"
+    "order": "Bestellen",
+    "type": "Design typ",
+    "price": "Preis",
+    "orderit": "Bestellen"
   }
 }
